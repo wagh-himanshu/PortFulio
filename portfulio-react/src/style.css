@@ -1,0 +1,128 @@
+/* src/styles.css */
+body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4; /* Light background */
+      color: #333333; /* Dark text for contrast */
+      line-height: 1.6;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      background: linear-gradient(90deg, #007bff, #0056b3); /* Blue gradient */
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar a {
+      color: #ffffff; /* White text on blue */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    .navbar a:hover {
+      color: #e0e0e0; /* Light gray on hover */
+    }
+    
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .home {
+      background-color: #ffffff; /* White section */
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .about, .skills, .projects, .contact {
+      background-color: #f4f4f4; /* Light gray */
+    }
+    
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .skills li {
+      background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient cards */
+      color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      min-width: 150px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }
+    
+    .skills li:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
+    }
+    
+    .projects .project-card {
+      background-color: #ffffff; /* White cards */
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+      border-left: 5px solid #007bff; /* Blue accent border */
+    }
+    
+    .projects .project-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+    
+    .contact input, .contact textarea, .contact button {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    
+    .contact input:focus, .contact textarea:focus {
+      border-color: #007bff; /* Blue focus */
+      outline: none;
+    }
+    
+    .contact button {
+      background-color: #007bff; /* Blue button */
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .contact button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .skills ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

@@ -9,9 +9,7 @@ function App() {
 
   return (
     <>
-    <h1 style={{ color: "red" }}>
-      React is rendering correctly ✅
-    </h1>
+    
       <Navbar />
       <Home />
       <About />

@@ -1,20 +1,19 @@
-function Skills() {
-      return (
-        <section id="skills">
-          <h2>Skills</h2>
-    
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Java</li>
-            <li>Git & GitHub</li>
-            <li>MySQL</li>
-          </ul>
-        </section>
-      );
-    }
-    
-    export default Skills;
-    
+// src/components/Skills.jsx
+import React from 'react';
+
+const Skills = () => {
+  const skills = ['JavaScript', 'React', 'Node.js', 'CSS', 'HTML', 'Git'];
+
+  return (
+    <section className="section skills">
+      <h2>My Skills</h2>
+      <ul>
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
+    </section>
+  );
+};
+
+export default Skills;
