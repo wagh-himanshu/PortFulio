@@ -2,13 +2,13 @@
 import React from 'react';
 
 const Skills = () => {
-  const skills = ['JavaScript', 'React', 'Node.js', 'CSS', 'HTML', 'Git'];
+  const skills = ['JavaScript', 'React', 'Node.js', 'CSS', 'HTML', 'Git', 'Java', 'php'];
 
   return (
     <section className="section skills">
       <h2>My Skills</h2>
       <ul>
-        {skills.map((skill, index) => (
+        {skills.map((skill, index) => (  
           <li key={index}>{skill}</li>
         ))}
       </ul>

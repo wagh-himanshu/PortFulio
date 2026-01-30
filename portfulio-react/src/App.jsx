@@ -5,24 +5,18 @@ import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 
-import { Route, Routes } from "react-router-dom";
-
 function App() {
- 
-
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/skills" element={<Skills />}/>
-        <Route path="/projects" element={<Projects />}/>
-        <Route path="/contact" element={<Contact />}/>
-      </Routes>
-   
+
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="skills"><Skills /></section>
+      <section id="projects"><Projects /></section>
+      <section id="contact"><Contact /></section>
     </>
   );
 }
 
-export default App
+export default App;
